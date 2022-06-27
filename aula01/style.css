@@ -1,0 +1,21 @@
+h1 {
+    color: #0000ff;
+    font-size:  45px;
+}
+.quadrado{
+    width: 500px;
+    height: 100px;
+    background-color: #0000ff;
+}
+.bolinha{
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #0000ff;
+}
+
+.bolinha:hover{
+    width: 400px;
+    height: 400px;
+}
