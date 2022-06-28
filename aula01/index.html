@@ -1,119 +1,216 @@
-<!--Aula 01 - DOM E HTML -->
-
 <!DOCTYPE html>
-<!--Versão do html mais recente-->
 <html lang="pt-br">
-<!--Linguagem da minha página web-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aula 01 - c17</title>
+        <style>
+            code {
+                font-size: 16px;
+            }
 
-<head>
-    <!--É o cabeçalho da pagina, onde está todas as configurações da página web. Escopo dentro do head sempre será as configurações, ele pertence ao html, por isso chamar ele de filho do html-->
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
 
-    <!--Configurações não visiveis para o usuario -->
-    <meta charset="UTF-8" />
-    <!--Tipo de dicionario, conjunto de caracteres para o teclado-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--Compatibilidade com o navegador edge-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--reponsividade, então é sobre o tamanho da tela-->
-    <title>Aula 01 - c17</title>
-    <!--Titulo da página, que aparece na aba do navegador-->
-</head>
+    <body>
+        <header>
+            <figure>
+                <h1>Cursos de Programação</h1>
+                <img
+                    src="https://www.a-sapiens.it/wp-content/uploads/2019/12/HTTML-1.jpg"
+                    alt="Imagem representando o HTML"
+                />
+                <figcaption>Imagem meramente ilustrativa</figcaption>
+            </figure>
+        </header>
 
-<body>
-    <nav>
-        <!--Menu de navegação-->
-        <ul>
-            <li><a href="#">Cursos</a></li>
-            <li><a href="#">Imagens</a></li>
-            <li><a href="#">Inscreva-se</a></li>
-        </ul>
+        <main>
+            <section>
+                <h3>Conteúdos</h3>
+                <aside>
+                    <nav>
+                        <ul type="square">
+                            <li>
+                                <a href=""> Começando com o HTML </a>
+                            </li>
+                            <li>
+                                <a href=""> DOM </a>
+                            </li>
+                            <li>
+                                <a href=""> Estrutura basica do HTML5 </a>
+                            </li>
+                            <li>
+                                <a href=""> HTML semântico </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <article>
+                    <h2>Começando com o HTML</h2>
+                    <p>
+                        HTML - Linguagem de Marcação de Hipertexto html é a
+                        marcação de uma pagina web,ou seja, e a parte que define
+                        o significado, como o conteúdo e a estrutura dentro da
+                        página.
+                    </p>
+                    <p>
+                        Todo link, imagem, texto, video é disposto na tela
+                        atravez do HTML. Portanto, o HTML pode ser difinido como
+                        a marção de midia e textos em página web.
+                    </p>
+                </article>
 
-    </nav>
-    <header>
+                <article>
+                    <h2>DOM</h2>
+                    <p>
+                        O DOM é o responsavel por criar a herença entre as tag ,
+                        parent e children. No DOM temos um especie de arvore,
+                        sendo o DOM o topo dessa arvore e abaixo dele temos todo
+                        nosso arquivo HTML, dividido entre parent e children. E
+                        atravez do DOM podemos manipular todas as tags HTML,
+                        atravez do CSS, dando vida a página e com o JS dando a
+                        interação da mesma.
+                    </p>
+                    <ul>
+                        <li>parent == tag pai / superior</li>
+                        <li>
+                            children == tag filha / inferior ou atributo de uma
+                            tag
+                        </li>
+                    </ul>
+                    <figure>
+                        <img src="./fotos/arvore_dom.jpeg" alt="Arvore DOM" />
+                        <figcaption>Demostração da arvore DOM</figcaption>
+                    </figure>
+                </article>
 
-        <h1>Cursos de Programação</h1>
+                <article>
+                    <h3>Estrutura basica do HTML5</h3>
+                    <figure>
+                        <img
+                            src="./fotos/Captura de tela 2022-06-28 095659.png"
+                            alt="Estrutura do HTML 5"
+                        />
+                        <figcaption>Exemplo tirado do vscode</figcaption>
+                    </figure>
+                    <ol>
+                        <li>
+                            <code> &lt;!DOCTYPE html&gt; </code>
+                        </li>
+                        <ul type="square">
+                            <li>
+                                Essa tag tem como objetivo dizer ao navegador
+                                qual versão do html a nossa página web está
+                                usando. A declaração como acima diz respeito ao
+                                HTML 5.
+                            </li>
+                        </ul>
+                        <li>
+                            <code> &lt;html lang="pt-br"&gt; </code>
+                        </li>
+                        <ul type="square">
+                            <li>
+                                A tag onde onde todo nosso código HTML estará.
+                                Já o atributo
+                                <strong>lang="pt-br</strong> é linguagem da
+                                minha página web
+                            </li>
+                        </ul>
+                        <li>
+                            <code> &lt;head&gt; </code>
+                        </li>
+                        <ul type="square">
+                            <li>
+                                É o cabeçalho da pagina, onde está todas as
+                                configurações da página web, configurações não
+                                visiveis para o usuario. Escopo dentro do head
+                                sempre será as configurações, ele pertence ao
+                                html, por isso chamar ele de filho do html.
+                            </li>
+                        </ul>
+                        <li>
+                            <code> &lt;meta charset="UTF-8"&gt; </code>
+                        </li>
+                        <ul type="square">
+                            <li>
+                                Tipo de dicionario, conjunto de caracteres para
+                                o teclado.
+                            </li>
+                        </ul>
+                        <li>
+                            <code>
+                                &lt;meta http-equiv="X-UA-Compatible"
+                                content="IE=edge"&gt;
+                            </code>
+                        </li>
+                        <ul type="square">
+                            <li>
+                                Compatibilidade com o navegador edge, se for
+                                internet explore, será tratado da mesma forma
+                                que o ED.
+                            </li>
+                        </ul>
+                        <li>
+                            <code>
+                                &lt;meta name="viewport"
+                                content="width=device-width, initial-scale=1.0"
+                                &gt;
+                            </code>
+                        </li>
+                        <ul type="square">
+                            <li>
+                                Essa tag tem com os atributos name="viewport"
+                                content="width=device-width, initial-scale=1.0",
+                                objetivo definir a largura de pixel da página
+                                como a mesma que a largura de pixel do
+                                dispositivo em que é visualizada, bem como
+                                definir o nível de zoom inicial como padrão.
+                                Isso é importante porque no design web
+                                responsivo você muitas vezes deseja exibir
+                                conteúdo com base na largura do dispositivo.
+                            </li>
+                        </ul>
+                        <li>
+                            <code> &lt;title&gt; </code>
+                        </li>
+                        <ul type="square">
+                            <li>
+                                Essa tag tem como objetivo colocar um titulo na
+                                página, titulo que aparece na aba do navegador.
+                            </li>
+                        </ul>
+                        <li>
+                            <code> &lt;body&gt; </code>
+                        </li>
+                        <ul type="square">
+                            <li>
+                                É o corpo do site, onde inserimos imagens,
+                                textos, vídeos, mapas. Ou seja, tudo que é
+                                visível para o usuario final.
+                            </li>
+                        </ul>
+                    </ol>
+                </article>
 
-    </header>
-
-    <main>
-
-        <section>
-
-            <h2>HTML e CSS</h2>
-
-            <article>
-
-                <h3>Curso básico de HTML e CSS</h3>
-
-                <p>Conheça a linguagem de marcação HTML e de estilo CSS.</p>
-
-            </article>
-
-            <article>
-
-                <h3>HTML Semântico</h3>
-
-                <p>Aprenda a criar páginas HTML de forma semântica.</p>
-
-            </article>
-
-        </section>
-
-        <section>
-
-            <h2>JavaScript</h2>
-
-            <article>
-
-                <h3>Curso de JavaScript Fullstack</h3>
-
-                <p>Neste curso você aprenderá a desenvolver aplicações com JS.</p>
-
-            </article>
-
-            <article>
-
-                <h3>Curso de Express</h3>
-
-                <p>Neste curso você aprenderá utilizar o framework Express.</p>
-
-            </article>
-
-        </section>
-
-        <section>
-            <h2>Lista de Definições</h2>
-            <dl>
-                <dt>HTML</dt>
-                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem modi, libero atque
-                    architecto tempora repellat fuga magnam culpa inventore, fugit ullam, obcaecati voluptates. Eum unde
-                    nam facere voluptatem vero.</dd>
-            </dl>
-        </section>
-
-        <section>
-
-            <h2>Videos dos conteúdos</h2>
-
-            <iframe width="733" height="412" src="https://www.youtube.com/embed/oKlEjpr_26Y"
-                title="[M02 WBC] - AULA 01 - P8 - Seletores em HTML" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-        </section>
-
-    </main>
-
-
-
-    <footer>
-
-        <p>
-            <a href="https://blueedtech.com.br" target="_blank">www.blueedtech.com.br.</a> <br />₢Todos os direitos
-            reservados.
-        </p>
-
-    </footer>
-</body>
-
+                <article>
+                    <h3>HTML semântico</h3>
+                    <ol type="1">
+                        <li>Tags semânticas.</li>
+                        <li>
+                            Tem como objetico deixar mais claro e legivel nosso
+                            código. Deixando acessivel a qualquer desenvolvedor.
+                        </li>
+                        <li>
+                            Descrever o significado do conteúdo presente nesses
+                            documentos através de tags semânticas.
+                        </li>
+                    </ol>
+                </article>
+            </section>
+        </main>
+    </body>
 </html>

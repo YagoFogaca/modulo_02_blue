@@ -1,0 +1,60 @@
+<!--Aula 01 - DOM E HTML -->
+<!-- Introdução ao DOM -->
+<!-- 
+    HTML - Linguagem de Marcação de Hipertexto
+    html é a marcação de uma pagina web,ou seja, e a parte que define o significado, como o conteúdo e a estrutura dentro da página. Todo link, imagem, texto, video é disposto na tela atravez do HTML.Então o HTML pode ser difinido como marção de midia e textos em página web.
+    parent == tag pai/ superior
+    children == tag filha / inferior ou atributo de uma tag
+
+    O DOM é o responsavel por criar a herença entre as tag , parent e children. No DOM temos um especie de arvore, sendo o DOM o topo dessa arvore e abaixo dele temos todo nosso arquivo HTML, dividido entre parent e children. E atravez do DOM podemos manipular todas as tags HTML, atravez do CSS, dando vida a página e com o JS dando a interação da mesma.
+
+    - Um exemplo da manipulação do DOM é a responsividade, onde atravez do DOM podemos definir um tamanho para um elemento e depois muda-lo dependendo do tamnho da tela. Esse processo é feito sem que o documento HTML seja alterado somente com o CSS.
+    - Outro exemplo de manipulação de DOM é atravez do JS, é mudar o comportamento de algum elemento, como em um botão, cliquando nele acontece algo.
+-->
+
+<!--
+
+    Estrutura de páginas
+    index.html === arquivo principal
+
+    abertura e fechamento de tag
+    atributos
+-->
+
+<!DOCTYPE html>
+<!--Versão do html mais recente-->
+<html lang="pt-br">
+    <!--Representa todo nosso arquivo HTML, aqui estarão as configurações da página, textos e midias-->
+    <!--O atributo lang define o idioma da pagina e com seu valor como ="pt-br" para portugues-->
+
+    <head>
+        <!--É o cabeçalho do site-->
+        <!--meta === metas dados, configurações que não visiveis-->
+        <meta charset="UTF-8" />
+        <!---->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--Para evitar conflito entre o IE é EDGE-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Essa tag tem com os atributos name="viewport" content="width=device-width, initial-scale=1.0", objetivo definir a largura de pixel da página como a mesma que a largura de pixel do dispositivo em que é visualizada, bem como definir o nível de zoom inicial como padrão. Isso é importante porque no design web responsivo você muitas vezes deseja exibir conteúdo com base na largura do dispositivo.-->
+        <title>Aula 01</title>
+        <!--Essa tag tem como objetivo colocar um titulo na página, que aparece na aba do navegador.-->
+    </head>
+
+    <body>
+        <h1>hello world</h1>
+        <h2>hello!</h2>
+        <p>Bão?</p>
+
+        <p>
+            <q
+                >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua</q
+            >
+            - <cite>http://br.lipsum.com/</cite>.
+        </p>
+        <p>
+            <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt u</q
+            ><cite>http://br.lipsum.com/</cite>
+        </p>
+    </body>
+</html>
