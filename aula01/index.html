@@ -1,14 +1,119 @@
 <!--Aula 01 - DOM E HTML -->
 
 <!DOCTYPE html>
-<html lang="en">
+<!--Versão do html mais recente-->
+<html lang="pt-br">
+<!--Linguagem da minha página web-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--É o cabeçalho da pagina, onde está todas as configurações da página web. Escopo dentro do head sempre será as configurações, ele pertence ao html, por isso chamar ele de filho do html-->
+
+    <!--Configurações não visiveis para o usuario -->
+    <meta charset="UTF-8" />
+    <!--Tipo de dicionario, conjunto de caracteres para o teclado-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Compatibilidade com o navegador edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--reponsividade, então é sobre o tamanho da tela-->
+    <title>Aula 01 - c17</title>
+    <!--Titulo da página, que aparece na aba do navegador-->
 </head>
+
 <body>
-    
+    <nav>
+        <!--Menu de navegação-->
+        <ul>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Imagens</a></li>
+            <li><a href="#">Inscreva-se</a></li>
+        </ul>
+
+    </nav>
+    <header>
+
+        <h1>Cursos de Programação</h1>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>HTML e CSS</h2>
+
+            <article>
+
+                <h3>Curso básico de HTML e CSS</h3>
+
+                <p>Conheça a linguagem de marcação HTML e de estilo CSS.</p>
+
+            </article>
+
+            <article>
+
+                <h3>HTML Semântico</h3>
+
+                <p>Aprenda a criar páginas HTML de forma semântica.</p>
+
+            </article>
+
+        </section>
+
+        <section>
+
+            <h2>JavaScript</h2>
+
+            <article>
+
+                <h3>Curso de JavaScript Fullstack</h3>
+
+                <p>Neste curso você aprenderá a desenvolver aplicações com JS.</p>
+
+            </article>
+
+            <article>
+
+                <h3>Curso de Express</h3>
+
+                <p>Neste curso você aprenderá utilizar o framework Express.</p>
+
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Lista de Definições</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem modi, libero atque
+                    architecto tempora repellat fuga magnam culpa inventore, fugit ullam, obcaecati voluptates. Eum unde
+                    nam facere voluptatem vero.</dd>
+            </dl>
+        </section>
+
+        <section>
+
+            <h2>Videos dos conteúdos</h2>
+
+            <iframe width="733" height="412" src="https://www.youtube.com/embed/oKlEjpr_26Y"
+                title="[M02 WBC] - AULA 01 - P8 - Seletores em HTML" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            <a href="https://blueedtech.com.br" target="_blank">www.blueedtech.com.br.</a> <br />₢Todos os direitos
+            reservados.
+        </p>
+
+    </footer>
 </body>
+
 </html>
