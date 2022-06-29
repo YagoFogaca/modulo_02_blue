@@ -1,0 +1,112 @@
+<!-- Crie um arquivo chamado ex08.html, nele insira uma section e dentro dela adicione um form nele você irá construir um cadastro de um dev, faremos algumas perguntas para explorar a maioria de funcionalidades de um formulário possível, os campos serão:
+Nome ok 
+Sobrenome ok
+E-mail ok
+De qual lado da aplicação você desenvolve, com três opções de escolha única, Front, Back ou FullStack no formato radio box ok
+Senioridade, com um campo select e três opções, júnior, pleno e sênior. ok
+Selecione as tecnologias que utiliza, com quantas opções você preferir, porém, no formato checkbox permitindo múltipla seleção.
+Conte um pouco mais da sua experiência, campo no formato textarea, com espaço para digitar um texto maior.
+Botão de conclusão.\
+Provavelmente você precise pesquisar por alguns elementos novos, mas o código será disponibilizado e você pode tirar suas dúvidas com o professor disponível. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exercicio 08</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <form action="">
+                    <div>
+                        <label for="nome"> Nome: </label>
+                        <br />
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" autofocus />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="sobrenome">Sobrenome:</label>
+                        <br />
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <br />
+                        <input type="email" name="email" id="email" placeholder="E-mail" />
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="area_aplicacao">De qual lado da aplicação você desenvolve? </label>
+                        <br />
+                        <input type="radio" name="area_aplicacao" id="front" />
+                        <label for="front">Front-end</label>
+                        <input type="radio" name="area_aplicacao" id="back" />
+                        <label for="back">Back-end</label>
+                        <input type="radio" name="area_aplicacao" id="fullstack" />
+                        <label for="fullstack">FullStack</label>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="senioridade">Qual é seu nivel de senioridade? </label>
+                        <select id="senioridade" name="select">
+                            <option value="valor0" selected>Opções</option>
+                            <option value="valor1">Junior</option>
+                            <option value="valor2">Pleno</option>
+                            <option value="valor3">Sênior</option>
+                        </select>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="tecnologias">Quais são as tecnoligias que você usa?</label>
+                        <br />
+                        <input type="checkbox" name="html" id="html" />
+                        <label for="html">HTML</label>
+                        <br />
+                        <input type="checkbox" name="css" id="css" />
+                        <label for="css">CSS</label>
+
+                        <br />
+                        <input type="checkbox" name="js" id="js" />
+                        <label for="js">JS</label>
+
+                        <br />
+                        <input type="checkbox" name="node" id="node" />
+                        <label for="node">NODE.js</label>
+
+                        <br />
+                        <input type="checkbox" name="ts" id="ts" />
+                        <label for="ts">TYPESCRIPT</label>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <label for="textarea">Diga mais sobre você e suas experiência profissionais:</label>
+                        <br />
+                        <textarea name="textarea" id="textarea" cols="45" rows="10" style="resize: none"></textarea>
+                    </div>
+
+                    <br />
+                    <div>
+                        <input type="button" value="Fazer cadastro" />
+                        <input type="reset" value="Limpar" />
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
