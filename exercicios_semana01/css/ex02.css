@@ -1,0 +1,33 @@
+/*
+2. Utilizando a base de HTML do exercício 02 da aula 02, 
+adicione um fonte externa, vinda do Google Fonts, adicione essa mesma fonte a todo documento, ok
+coloque uma margem no body de 3 rem em cima e em baixo e 10rem nas laterais, ok
+o título deve ter 3rem de tamanho, ok
+o texto embaixo do título deve receber uma identificação única e somente nesse texto adicione um tamanho de fonte de 0.8rem e uma cor cinza-claro. O h2 deve ter 2rem de tamanho e a core vermelha, para finalizar os parágrafos restantes devem ter o tamanho de 1.3rem.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Heebo", sans-serif;
+}
+body {
+    margin: 3rem 10rem;
+    background-color: black;
+    color: aqua;
+}
+h1#banner_titulo {
+    font-size: 3rem;
+}
+p#primeiro_paragrafo {
+    font-size: 0.8rem;
+    color: #868686;
+}
+h2#titulo_conteudo {
+    font-size: 2rem;
+    color: #ff0000ea;
+}
+.parafrago_conteudo {
+    font-size: 1.3rem;
+}

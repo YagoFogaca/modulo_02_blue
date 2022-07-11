@@ -1,0 +1,53 @@
+/* Utilizando a base de HTML do exercício 03 da aula 02, adicione os seguintes estilos:
+Zerar configurações no navegador ok
+Aplicar um fonte externa no documento inteiro ok
+Centralizar o título, paragrafo do título e subtitulo ok
+Diminuir tamanho do texto to titulo e colocar um cinza-claro ok
+Agrupar os parágrafos e imagens em sections ok
+Aplicar flex-box nas sections
+Mudar a ordem da imagem com o texto, conforme resultado abaixo, com o flex-box
+Adicionar uma sombra nas sections
+Adicionar espaçamentos para a imagem e o texto desgrudarem da borda */
+@import url("https://fonts.googleapis.com/css2?family=Gantari:wght@100&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gantari", sans-serif;
+}
+body {
+    padding: 15px;
+}
+header#cabecalho_banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+p#banner_descricao {
+    font-size: 0.9rem;
+    color: #898989;
+}
+section#cards {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+}
+section.sections_cards {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 39px;
+    background: #f5f5f5;
+    box-shadow: 22px 22px 7px #a9a9a9, -22px -22px 7px #ffffff;
+}
+section.sections_cards p {
+    width: 60%;
+    min-width: 450px;
+}
+
+img {
+    max-width: 150px;
+}

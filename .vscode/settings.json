@@ -1,3 +1,4 @@
 {
-  "livePreview.defaultPreviewPath": "/aula01/index.html"
+    "livePreview.defaultPreviewPath": "/aula01/index.html",
+    "liveServer.settings.port": 5501
 }

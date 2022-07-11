@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+/*storyset === imagens sempre png*/
+/*css gradiente === */
+
+h2 {
+    width: 25rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #000;
+}
+article.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    height: 100vh;
+    gap: 10px 20px;
+}
+div#div1 {
+    background-color: #ff0000;
+    width: 100px;
+    height: 100px;
+    order: 4;
+}
+div#div2 {
+    background-color: #00ff00;
+    width: 100px;
+    height: 100px;
+    order: 3;
+}
+div#div3 {
+    background-color: #0000ff;
+    width: 100px;
+    height: 100px;
+    order: 2;
+}
+div#div4 {
+    background-color: #6a6a6a;
+    width: 100px;
+    height: 100px;
+    order: 1;
+}

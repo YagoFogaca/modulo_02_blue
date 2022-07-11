@@ -1,0 +1,20 @@
+/*
+Utilizando a base de HTML do exercício 01 da aula 02, adicione a fonte Arial a todos os textos, o título deve ser azul, no tom que você quiser, o tamanho da fonte do parágrafo deve ser de 1.3rem, o background do body dever ser cinza-claro.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #a3a3a3;
+    padding: 10px;
+}
+h1#banner_titulo {
+    color: #1e3d8f;
+    text-align: center;
+}
+p.paragrafo {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
